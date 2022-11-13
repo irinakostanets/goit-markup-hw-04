@@ -181,8 +181,6 @@ p {color: var(--p-text-color);}
     border-radius: 4px;
     margin-bottom: 30px;
     background-size: contain;
-    background-repeat:no-repeat;
-    background-position: center;
     background: #F5F4FA;
 }
 .item.icon-antenna::before {
@@ -192,12 +190,18 @@ p {color: var(--p-text-color);}
 }
 .item.icon-clock::before {
     background-image: url("../images/clock.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .item.icon-diagram::before {
     background-image: url("../images/diagram.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .item.icon-astronaut::before {
     background-image: url("../images/astronaut.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .section-title,
 .section2-title {
@@ -268,18 +272,18 @@ p {color: var(--p-text-color);}
     text-align: center;
     margin-bottom: 16px;
 }
-.team-member-soc-list {
+.member-soc-list {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.team-member-soc-item {
+.member-soc-item {
     width: 44px;
     height: 44px;
 }
 
-.team-member-soc-link {
+.member-soc-link {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -287,15 +291,49 @@ p {color: var(--p-text-color);}
     align-items: center;
     justify-content: center;
 }
-
+.member-soc-link:hover,
+.member-soc-link:focus {
+    background-color: var(--accent-color);
+}
+.member-soc-link:hover .member-soc-icon,
+.member-soc-link:focus .member-soc-icon {
+    fill: var(--white-color);
+}
 .link {}
 
-/* Constant-clients */
-.section.constant-clients {
+/* Clients */
+.section.clients {
     background-color: var(--light-backgroud-color);
 }
 .section-title {
     margin-bottom: 50px;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.clients-item {
+   
+}
+.clients-link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid 
+    border-color:#AFB1B8;
+    border-radius: 4px;
+    fill:#afb1b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients-link:hover .clients-logo-item,
+.clients-link:focus .clients-logo-item {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.clients-logo-item {
+    
 }
 /* Portfolio servises */
 
