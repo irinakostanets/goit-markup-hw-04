@@ -121,9 +121,13 @@ p {color: var(--p-text-color);}
 
 .hero {
     padding: 200px 0px;
-
-    background-color: var(--dark-backgroud-color);
     text-align: center;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/new-foto\ .jpg);
 }
 .hero-title {
     margin-bottom: 30px;
@@ -169,6 +173,31 @@ p {color: var(--p-text-color);}
 }
 .feature-list .item + .item {
     margin-left: 30px;
+}
+.feature-list .item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    background: #F5F4FA;
+}
+.item.icon-antenna::before {
+    background-image: url("../images/antenna.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item.icon-clock::before {
+    background-image: url("../images/clock.png");
+}
+.item.icon-diagram::before {
+    background-image: url("../images/diagram.png");
+}
+.item.icon-astronaut::before {
+    background-image: url("../images/astronaut.png");
 }
 .section-title,
 .section2-title {
@@ -219,7 +248,7 @@ p {color: var(--p-text-color);}
     margin-left: 30px;
 }
 .team-member {
-    padding-bottom: 37px;
+    padding-bottom: 30px;
     background-color: var(--white-color);
     width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -237,6 +266,36 @@ p {color: var(--p-text-color);}
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 16px;
+}
+.team-member-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-member-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.team-member-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {}
+
+/* Constant-clients */
+.section.constant-clients {
+    background-color: var(--light-backgroud-color);
+}
+.section-title {
+    margin-bottom: 50px;
 }
 /* Portfolio servises */
 
