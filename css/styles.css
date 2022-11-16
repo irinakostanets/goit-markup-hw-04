@@ -336,11 +336,8 @@ p {color: var(--p-text-color);}
     fill: #AFB1B8;
     
 }
-.clients-logo-link:focus {
-    border-color: var(--accent-color);
-}
-.clients-logo:hover .clients-logo-icon,
-.clients-logo:focus .clients-logo-icon{
+.clients-logo-link:hover .clients-logo-icon,
+.clients-logo-link:hover .clients-logo-icon {
     fill: var(--accent-color);
     border-color: var(--accent-color);
 }
