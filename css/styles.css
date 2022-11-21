@@ -36,7 +36,10 @@ ul {
     margin: 0;
     list-style: none;
 }
-
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
 p {color: var(--p-text-color);}
 
 .header {
